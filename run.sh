@@ -21,4 +21,4 @@ if ! command -v overlord &> /dev/null; then
 fi
 
 # Run overlord command with the template project
-overlord create template_project.over --board kv260
+overlord create template_project.over --board tangnano9k
