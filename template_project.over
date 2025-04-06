@@ -1,0 +1,9 @@
+name: TestProject
+board: TestBoard
+resources:
+  - resource1.toml
+  - resource2.toml
+settings:
+  output: ./output
+  nostdresources: false
+  nostdprefabs: false
