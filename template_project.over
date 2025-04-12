@@ -1,9 +1,3 @@
-name: TestProject
-board: TestBoard
-resources:
-  - resource1.toml
-  - resource2.toml
-settings:
-  output: ./output
-  nostdresources: false
-  nostdprefabs: false
+instance:
+- name: async_transmitter
+  type: io.uart.simple_fixed
