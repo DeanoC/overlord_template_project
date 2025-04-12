@@ -1,3 +1,11 @@
 instance:
 - name: async_transmitter
   type: io.uart.simple_fixed
+
+connection:
+- connection: async_transmitter.clk <- clock.ref.27MHz
+  type: clock
+- connection: async_transmitter.ClkFrequency <- clock.ref.27MHz
+  type: parameter
+- connection: async_transmitter.TxD -> BOARD.UART_TX
+  type: port
