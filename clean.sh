@@ -21,4 +21,10 @@ if [ -d "gate/" ]; then
   rm -rf gate
 fi
 
+# Remove the generated files in the logs directory
+if [ -d "logs/" ]; then
+  echo "Removing generated files in logs directory"
+  rm -rf logs
+fi
+
 echo "Cleanup complete!"
